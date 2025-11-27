@@ -1,0 +1,31 @@
+
+---
+To: jackma@rrc.ca
+Subject: ALERT: Unusual Activity: 2025-03-13 20:44:36.969930
+Message: Notification for 1234: Jack Ma: Large transaction $10,000.00: on account 11001.
+---
+---
+To: jackma@rrc.ca
+Subject: ALERT: Unusual Activity: 2025-03-13 20:44:36.969930
+Message: Notification for 1234: Jack Ma: Low balance warning $1.00: on account 11001.
+---
+---
+To: jackma@rrc.ca
+Subject: ALERT: Unusual Activity: 2025-03-13 20:44:36.969930
+Message: Notification for 1234: Jack Ma: Large transaction $-10,999.00: on account 11001.
+---
+---
+To: jackma@rrc.ca
+Subject: ALERT: Unusual Activity: 2025-03-13 20:44:36.969930
+Message: Notification for 1234: Jack Ma: Large transaction $10,000.00: on account 11002.
+---
+---
+To: jackma@rrc.ca
+Subject: ALERT: Unusual Activity: 2025-03-13 20:44:36.969930
+Message: Notification for 1234: Jack Ma: Low balance warning $1.00: on account 11002.
+---
+---
+To: jackma@rrc.ca
+Subject: ALERT: Unusual Activity: 2025-03-13 20:44:36.969930
+Message: Notification for 1234: Jack Ma: Large transaction $-10,999.00: on account 11002.
+---
