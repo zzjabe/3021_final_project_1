@@ -55,7 +55,7 @@ class AccountDetailsWindow(DetailsWindow):
         #     return
         
         try:
-            amount = float(amount_text)
+            amount = eval(amount_text)
         except:
             QMessageBox.information(self, "Invalid Data", "Amount must "
                                     + "be numeric.",  QMessageBox.Ok)
@@ -63,10 +63,7 @@ class AccountDetailsWindow(DetailsWindow):
             return
         
         sender = self.sender()
-        if sender == self.deposit_button:
-            transaction = "Deposit"
-        else:
-            transaction = "Withdraw"
+        transaction = "Deposit" if sender == self.deposit_button else "Withdraw"
 
         try:
             if transaction == "Deposit":
@@ -81,6 +78,7 @@ class AccountDetailsWindow(DetailsWindow):
             self.transaction_amount_edit.setFocus()
 
         except Exception as e:
+
             QMessageBox.information(self, f"{transaction} Failed", f"{e}", 
                                     QMessageBox.Ok)
             
