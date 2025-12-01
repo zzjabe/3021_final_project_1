@@ -27,8 +27,6 @@ class AccountDetailsWindow(DetailsWindow):
         if isinstance(account, BankAccount):        
             self.__account = copy.deepcopy(account)
 
-            print(f"[DEBUG] Loaded account info: number={self.__account.account_number}, balance={self.__account.balance}")
-
             self.account_number_label.setText(f"{self.__account.account_number}")
             self.balance_label.setText(f"${self.__account.balance:,.2f}")
 
@@ -80,9 +78,6 @@ class AccountDetailsWindow(DetailsWindow):
             self.transaction_amount_edit.setFocus()
 
         except Exception as e:
-
-            with open("logs/debug.log", "a") as log:
-                log.write(f"[ERROR] Account={self.__account.account_number}, Balance={self.__account.balance}, Error={e}\n")
 
             QMessageBox.information(self, f"{transaction} Failed", f"{e}", 
                                     QMessageBox.Ok)
